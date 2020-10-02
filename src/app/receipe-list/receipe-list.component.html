@@ -1,0 +1,26 @@
+
+<div class="col-md-12">
+  	<button class="btn btn-success">
+      New Receipe
+    </button>
+</div>
+
+	<hr>
+<div class="col-12 form-group">
+	<a href="#" class="list-group-item clearfix" *ngFor="let receipe of receipes ">
+		<div class="float-left">
+			<h4 class="list-group-item-heading">{{receipe.name}}</h4>
+			<p class="list-group-item-text">{{receipe.description}}</p>
+		</div>
+		<div class="float-right">
+			<img alt="{{receipe.name}}" [src]="receipe.imgPath" class="img-responsive" style="max-height:50px;">
+        </div>
+	</a>
+</div>
+
+<!-- 
+	<div class="row"> -->
+<div class="col-12">
+	<app-receipe-item></app-receipe-item>
+</div>
+<!-- </div> -->

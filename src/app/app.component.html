@@ -1,0 +1,14 @@
+<app-header (navBar)="onNavigate($event)"></app-header>
+<div class="container">
+	<!-- <h2>SHOPPING LIST</h2> -->
+	<div class="row mt-2">
+    <div class="col-md-12">
+      <app-receipes *ngIf="selectedTab==='Recipe'"></app-receipes>
+    </div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<app-shopping-list *ngIf="selectedTab!=='Recipe'"></app-shopping-list>
+		</div>
+	</div>
+</div>
