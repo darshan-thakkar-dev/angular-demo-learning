@@ -4,9 +4,14 @@ receipes works!
 
 <div class="row">
   <div class="col-md-6">
-      <app-receipe-list></app-receipe-list>
+      <app-receipe-list (receipeWasSelected)="selectedRecipe =$event"></app-receipe-list>
   </div>
   <div class="col-md-6">
-      <app-receipe-details></app-receipe-details>
+      <app-receipe-details *ngIf="selectedRecipe; else infoText"
+      [recipe]="selectedRecipe"
+      ></app-receipe-details>
+      <ng-template #infoText>
+
+      </ng-template>
   </div>
 </div>
