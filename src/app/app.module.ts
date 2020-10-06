@@ -13,10 +13,11 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
 import { ReceipesComponent } from './receipes/receipes.component';
 import { NgClassAndNgStyleComponent } from './ng-class-and-ng-style/ng-class-and-ng-style.component';
+import { CustomDirectiveDirective } from './custom-directive.directive';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent,ServerComponent, HeaderComponent, ReceipeItemComponent, ReceipeDetailsComponent, ReceipeListComponent, ShoppingListComponent, ShoppingEditComponent, ReceipesComponent, NgClassAndNgStyleComponent ],
+  declarations: [ AppComponent, HelloComponent,ServerComponent, HeaderComponent, ReceipeItemComponent, ReceipeDetailsComponent, ReceipeListComponent, ShoppingListComponent, ShoppingEditComponent, ReceipesComponent, NgClassAndNgStyleComponent, CustomDirectiveDirective ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
