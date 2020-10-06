@@ -12,10 +12,11 @@ import { ReceipeListComponent } from './receipe-list/receipe-list.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
 import { ReceipesComponent } from './receipes/receipes.component';
+import { NgClassAndNgStyleComponent } from './ng-class-and-ng-style/ng-class-and-ng-style.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent,ServerComponent, HeaderComponent, ReceipeItemComponent, ReceipeDetailsComponent, ReceipeListComponent, ShoppingListComponent, ShoppingEditComponent, ReceipesComponent ],
+  declarations: [ AppComponent, HelloComponent,ServerComponent, HeaderComponent, ReceipeItemComponent, ReceipeDetailsComponent, ReceipeListComponent, ShoppingListComponent, ShoppingEditComponent, ReceipesComponent, NgClassAndNgStyleComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

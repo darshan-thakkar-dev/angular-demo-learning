@@ -1,0 +1,17 @@
+<div class="col-12 alert alert-info">
+<div class="row">
+    <div class="col-3">
+    <button class="btn btn-primary" (click)= "clickedOnButton()">{{btnText}}</button>
+  </div>
+    <div class="col-9 alert alert-danger">
+
+  </div>
+</div>
+<div class="col-md-12 alert alert-info">
+  <ul class="list-group">
+    <li class="list-group-item"
+    [ngStyle]="!isOdd?{'background-color':'yellow'}:{'background-color':'red'}"
+     *ngFor="let oddNo of tempList">{{oddNo}}</li>
+  </ul>
+</div>
+
