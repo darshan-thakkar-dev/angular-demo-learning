@@ -14,10 +14,12 @@ import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
 import { ReceipesComponent } from './receipes/receipes.component';
 import { NgClassAndNgStyleComponent } from './ng-class-and-ng-style/ng-class-and-ng-style.component';
 import { CustomDirectiveDirective } from './custom-directive.directive';
+import { DropdownDirectiveComponent } from './shared/dropdown-directive/dropdown-directive.component';
+import { DropdownDirectiveDirective } from './shared/dropdown-directive.directive';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent,ServerComponent, HeaderComponent, ReceipeItemComponent, ReceipeDetailsComponent, ReceipeListComponent, ShoppingListComponent, ShoppingEditComponent, ReceipesComponent, NgClassAndNgStyleComponent, CustomDirectiveDirective ],
+  declarations: [ AppComponent, HelloComponent,ServerComponent, HeaderComponent, ReceipeItemComponent, ReceipeDetailsComponent, ReceipeListComponent, ShoppingListComponent, ShoppingEditComponent, ReceipesComponent, NgClassAndNgStyleComponent, CustomDirectiveDirective, DropdownDirectiveComponent, DropdownDirectiveDirective ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
