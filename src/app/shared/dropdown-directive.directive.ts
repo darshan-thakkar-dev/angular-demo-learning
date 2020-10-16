@@ -15,7 +15,7 @@ export class DropdownDirectiveDirective {
   @HostListener("click") openDropDown() {
     this.open = !this.open;
     this.element.nativeElement
-      .querySelector("dropdown-menu")
+      .querySelector(".dropdown-menu")
       .classList.toggle("show");
   }
 }
