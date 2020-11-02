@@ -15,6 +15,8 @@ import { ReceipesComponent } from "./receipes/receipes.component";
 import { NgClassAndNgStyleComponent } from "./ng-class-and-ng-style/ng-class-and-ng-style.component";
 import { CustomDirectiveDirective } from "./custom-directive.directive";
 import { DropdownDirectiveDirective } from "./shared/dropdown-directive.directive";
+import { ShoppingListService } from "./shopping-list/shopping-list.service";
+import { RecipeListService } from "./receipe-list/recipe-list.service";
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -33,6 +35,7 @@ import { DropdownDirectiveDirective } from "./shared/dropdown-directive.directiv
     CustomDirectiveDirective,
     DropdownDirectiveDirective
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [RecipeListService, ShoppingListService]
 })
 export class AppModule {}
