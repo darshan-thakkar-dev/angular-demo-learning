@@ -3,15 +3,13 @@ receipes works!
 </p> -->
 
 <div class="row">
-  <div class="col-md-6">
-      <app-receipe-list (receipeWasSelected)="selectedRecipe =$event"></app-receipe-list>
-  </div>
-  <div class="col-md-6">
-      <app-receipe-details *ngIf="selectedRecipe; else infoText"
-      [recipe]="selectedRecipe"
-      ></app-receipe-details>
-      <ng-template #infoText>
+	<div class="col-md-6">
+		<app-receipe-list></app-receipe-list>
+	</div>
+	<div class="col-md-6">
+		<app-receipe-details *ngIf="selectedRecipe; else infoText" [recipe]="selectedRecipe"></app-receipe-details>
+		<ng-template #infoText>
 
-      </ng-template>
-  </div>
+		</ng-template>
+	</div>
 </div>
